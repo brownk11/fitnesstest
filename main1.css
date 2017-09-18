@@ -1,0 +1,22 @@
+body
+{
+    background-color: white;
+    padding-top: 40px;
+    
+        padding: 1em;
+        height: 5%;
+        background-image: url("back.jpg");
+        overflow: hidden;
+    
+    
+    
+}
+
+
+.input-group-addon
+{
+  
+    color:BLACK;
+}
+
+.form-signup input[type="text"],.form-signup input[type="password"] { border: 1px solid rgb(50, 118, 177); }
