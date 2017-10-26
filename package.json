@@ -1,0 +1,35 @@
+{
+  "name": "2017fall",
+  "version": "1.0.0",
+  "description": "what do you meme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass jquery-mockup/src --output jquery-mockup/dist --watch",
+    "webpack:main": "webpack jquery-mockup/src/main.js jquery-mockup/dist/bundle.js --optimize-minimize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jewpaltz/2017fall.git"
+},
+  "dependencies": {
+    "express": "^4.15.4",
+    "jquery": "^3.2.1",
+    "bootstrap-4": "^4.0.0",
+    "popper.js": "^1.12.5"
+  },
+  "devDependencies": {
+      "@types/express" : "^4.0.37",
+      "@types/node": "^8.0.45",
+      "@types/body-parser": "^1.16.5",
+      "@types/jquery": "^3.2.12",    
+      "webpack": "^3.6.0",
+      "node-sass": "^4.5.3",
+      "css-loader": "^0.28.7",
+      "extract-text-webpack-plugin": "^3.0.0",
+      "sass-loader": "^6.0.6",
+      "style-loader": "^0.18.2",
+      "typescript": "^2.5.3",
+      "ts-loader": "^2.3.7"
+  }
+}
