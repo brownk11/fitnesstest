@@ -1,38 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <title>WorkoutPlan</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <link rel="stylesheet" href="homecss.css">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li style="float:right"><a href="#about">About</a></li>
-          </ul>
+            <link rel="stylesheet" href="workoutplan.css">
+            <div class="topnav" id="myTopnav">
+                    <a href="file:///C:/Users/Zero/Desktop/fitnesstest/jquery-mockup/home.html">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                  </div> 
     </head>
-    <body>
 
-       
+        <body>
+                <div id = "content">
+                        <h3>Enter Workouts Completed!</h3>                        
+                        <ol>
+                        
+                        </ol>
+                        <input id="name" type="text">
+                        <button id="b"> Swimming</button>    
+                        <button id="b1"> Lifting</button> 
+                        <button id="b2"> Jogging</button>
+                        <button id="b3"> Pushups</button>
+                    </div>   
+                    <script src="http://code.jquery.com/jquery.min.js"></script>
+                    <script>
+                        $('#b').click(function() {
+                            var value = $('#name').val();
+                            $('ol').append('<li>Swimming</li>');
+                        });           
+            
+                    </script>
+                    <script>
+                            $('#b1').click(function() {
+                                var value = $('#name').val();
+                                $('ol').append('<li>Lifting</li>');
+                            });           
+                
+                        </script>
+                        <script>
+                                $('#b2').click(function() {
+                                    var value = $('#name').val();
+                                    $('ol').append('<li>Jogging</li>');
+                                });           
+                    
+                            </script>
+                            <script>
+                                    $('#b3').click(function() {
+                                        var value = $('#name').val();
+                                        $('ol').append('<li>Pushups</li>');
+                                    });           
+                        
+                                </script>
+                   
 
-        <div id = "content">
-            <h3>Make Your Own Workout Plan!</h3>
-            <ol>
-            <li></li>
-            </ol>
-            <input id="name" type="text">
-            <button id="addOne"> Type Your own Workout!</button>     
-        </div>   
-        <script> src="http://code.jquery.com/jquery-2.1.0min.js">
-          </script>
-        <script>
-            $('#addOne').click(function() {
-                var value = $('#name').val();
-                $('ol').append('<li>'+ value + '</li>');});            
+        </body>
 
-        </script>
-    </body>
+
+
+
+
+
+
+
+
+
+
+
 </html>
