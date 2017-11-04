@@ -32,7 +32,7 @@ export class exerciseTracker {
     }
 }
 
-// Controller
+
 var ExerciseTracker = new exerciseTracker();
 ExerciseTracker.init().done(() => {
     ExerciseTracker.drawExercises();
