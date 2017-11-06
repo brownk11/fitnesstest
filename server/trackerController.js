@@ -1,10 +1,11 @@
 const express = require("express");
-const game = require("./gameObject");
+const tracker = require("./trackerObject");
 
 const router = express.Router();
 
+
 router
-    .get("/exercises", (req, res) => res.send(game.exercises))
+    .get("/exercises", (req, res) => res.send(tracker.exercises))
     
 
 
